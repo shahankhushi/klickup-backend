@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment files
+.env
+.env*.local
+
+# Database files
+*.db
+*.db-journal
+*.sqlite
+prisma/*.db
+prisma/*.db-journal
+
+# Uploads
+uploads/documents/*
+!uploads/documents/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# TypeScript
+*.tsbuildinfo

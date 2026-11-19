@@ -1,0 +1,171 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id         String     @id @default(cuid())
+  name       String
+  email      String     @unique
+  title      String?
+  role       String     @default("Member") // "Admin" | "Member" | "Guest"
+  status     String     @default("active") // "active" | "away" | "offline"
+  initials   String
+  color      String     @default("#6d28d9")
+  avatarUrl  String?
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+
+  assignedTasks Task[]     @relation("TaskAssignee")
+  comments      Comment[]
+  activities    Activity[]
+
+  @@map("users")
+}
+
+model Space {
+  id          String    @id @default(cuid())
+  name        String
+  description String?
+  color       String    @default("#6d28d9")
+  icon        String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  projects    Project[]
+
+  @@map("spaces")
+}
+
+model Project {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  color       String   @default("#f59e0b")
+  spaceId     String
+  space       Space    @relation(fields: [spaceId], references: [id], onDelete: Cascade)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  tasks       Task[]
+
+  @@map("projects")
+}
+
+model Task {
+  id          String          @id @default(cuid())
+  title       String
+  description String?
+  status      String          @default("todo") // "todo" | "in_progress" | "in_review" | "done"
+  priority    String          @default("normal") // "urgent" | "high" | "normal" | "low"
+  dueDate     String?
+  order       Int             @default(0)
+  assigneeId  String?
+  assignee    User?           @relation("TaskAssignee", fields: [assigneeId], references: [id], onDelete: SetNull)
+  projectId   String
+  project     Project         @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
+
+  checklist   ChecklistItem[]
+  comments    Comment[]
+  activities  Activity[]
+
+  @@map("tasks")
+}
+
+model ChecklistItem {
+  id        String   @id @default(cuid())
+  taskId    String
+  task      Task     @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  title     String
+  completed Boolean  @default(false)
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+
+  @@map("checklist_items")
+}
+
+model Comment {
+  id        String   @id @default(cuid())
+  taskId    String
+  task      Task     @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  authorId  String
+  author    User     @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  text      String
+  createdAt DateTime @default(now())
+
+  @@map("comments")
+}
+
+model Activity {
+  id          String   @id @default(cuid())
+  taskId      String
+  task        Task     @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  userId      String?
+  user        User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  action      String
+  description String
+  createdAt   DateTime @default(now())
+
+  @@map("activities")
+}
+
+model Whiteboard {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  data        String   // JSON serialized CanvasObject[] and canvas state
+  projectId   String?
+  spaceId     String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("whiteboards")
+}
+
+model Document {
+  id          String            @id @default(cuid())
+  title       String            @default("Untitled document")
+  description String?
+  icon        String            @default("📄")
+  coverImage  String?
+  ownerId     String?
+  workspaceId String?
+  departmentId String?
+  projectId   String?
+  folderId    String?
+  visibility  String            @default("workspace")
+  category    String?
+  tags        String            @default("[]")
+  content     String            @default("{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\"}]}")
+  contentVersion Int             @default(1)
+  isPinned    Boolean           @default(false)
+  isFavorite  Boolean           @default(false)
+  archivedAt  DateTime?
+  deletedAt   DateTime?
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+  versions    DocumentVersion[]
+
+  @@index([updatedAt])
+  @@index([projectId])
+  @@map("documents")
+}
+
+model DocumentVersion {
+  id         String   @id @default(cuid())
+  documentId String
+  document   Document @relation(fields: [documentId], references: [id], onDelete: Cascade)
+  title      String
+  content    String
+  editorId   String?
+  createdAt  DateTime @default(now())
+
+  @@index([documentId, createdAt])
+  @@map("document_versions")
+}

@@ -1,0 +1,557 @@
+{
+  "tasks": [
+    {
+      "id": "t_tkobzrj",
+      "title": "tehwyas",
+      "description": "",
+      "status": "todo",
+      "priority": "high",
+      "assigneeId": "u_faizan",
+      "projectId": "p_performance",
+      "dueDate": "2026-11-19",
+      "checklist": [],
+      "comments": [],
+      "activity": [
+        {
+          "id": "a_sx0ld6o",
+          "text": "Faizan Arif set priority to High",
+          "createdAt": "2026-11-19T10:11:28.324Z"
+        },
+        {
+          "id": "a_6ixtufo",
+          "text": "Faizan Arif created this task",
+          "createdAt": "2026-11-19T10:11:19.507Z"
+        }
+      ]
+    },
+    {
+      "id": "t_v672k2r",
+      "title": "sdfsdf",
+      "description": "",
+      "status": "todo",
+      "priority": "medium",
+      "assigneeId": "u_faizan",
+      "projectId": "p_performance",
+      "dueDate": "2026-11-19",
+      "checklist": [],
+      "comments": [],
+      "activity": [
+        {
+          "id": "a_xhvz5de",
+          "text": "Faizan Arif created this task",
+          "createdAt": "2026-11-19T10:11:11.652Z"
+        }
+      ]
+    },
+    {
+      "id": "t_gjzpn9i",
+      "title": "theyway",
+      "description": "",
+      "status": "in_progress",
+      "priority": "medium",
+      "assigneeId": "u_faizan",
+      "projectId": "p_performance",
+      "dueDate": "2026-11-19",
+      "checklist": [],
+      "comments": [],
+      "activity": [
+        {
+          "id": "a_r5f87d4",
+          "text": "Faizan Arif created this task",
+          "createdAt": "2026-11-19T10:10:50.508Z"
+        }
+      ]
+    },
+    {
+      "id": "t_obeya",
+      "title": "Prepare the Obeya meeting Report Today",
+      "description": "Compile and present the daily Obeya operations and performance metrics.",
+      "status": "done",
+      "priority": "urgent",
+      "assigneeId": "u_abdul",
+      "projectId": "p_performance",
+      "dueDate": "2026-11-19",
+      "checklist": [
+        {
+          "id": "c1",
+          "title": "Collect department KPIs and ad metrics",
+          "done": true
+        },
+        {
+          "id": "c2",
+          "title": "Format executive slide summary",
+          "done": false
+        }
+      ],
+      "comments": [],
+      "activity": [
+        {
+          "id": "a_1eb25y1",
+          "text": "Abdul Rehman marked this task as complete",
+          "createdAt": "2026-11-19T08:20:56.068Z"
+        },
+        {
+          "id": "a1",
+          "text": "Abdul Rehman started working on Obeya report",
+          "createdAt": "2026-11-19T06:57:37.287Z"
+        }
+      ],
+      "completedAt": "2026-11-19T08:20:56.068Z"
+    },
+    {
+      "id": "t_research_ads",
+      "title": "Finalize research data for ad campaign",
+      "description": "Data analysis and audience research for upcoming performance campaigns.",
+      "status": "in_progress",
+      "priority": "high",
+      "assigneeId": "u_abdul",
+      "projectId": "p_performance",
+      "dueDate": "2026-11-19",
+      "checklist": [
+        {
+          "id": "c3",
+          "title": "Compile spreadsheet data",
+          "done": true
+        }
+      ],
+      "comments": [],
+      "activity": [
+        {
+          "id": "a2",
+          "text": "Abdul Rehman created task",
+          "createdAt": "2026-11-19T06:57:37.287Z"
+        }
+      ]
+    },
+    {
+      "id": "t_google_ads_spend",
+      "title": "Update Google Ads campaign budget & bids",
+      "description": "Optimize high-performing ad sets and update daily spend allocations.",
+      "status": "in_progress",
+      "priority": "high",
+      "assigneeId": "u_saira",
+      "projectId": "p_performance",
+      "dueDate": "2026-11-19",
+      "checklist": [],
+      "comments": [],
+      "activity": []
+    },
+    {
+      "id": "t_banner_design",
+      "title": "Design showroom banners and visual creative assets",
+      "description": "Create high-res banners and promotional display mockups.",
+      "status": "todo",
+      "priority": "high",
+      "assigneeId": "u_zunaira",
+      "projectId": "p_creative",
+      "dueDate": "2026-11-19",
+      "checklist": [
+        {
+          "id": "c4",
+          "title": "Finalize color palette and typography",
+          "done": false
+        }
+      ],
+      "comments": [],
+      "activity": []
+    },
+    {
+      "id": "t_video_reels",
+      "title": "Video editing for weekly vehicle showcase reels",
+      "description": "Edit 4k walkaround video clips with voiceover and audio mastering.",
+      "status": "todo",
+      "priority": "normal",
+      "assigneeId": "u_umair",
+      "projectId": "p_creative",
+      "dueDate": "2026-11-20",
+      "checklist": [],
+      "comments": [],
+      "activity": []
+    },
+    {
+      "id": "t_data_inventory",
+      "title": "Vehicle inventory sheets upload and catalog update",
+      "description": "Sync newly arrived vehicle specs, VIN numbers, and photos.",
+      "status": "in_progress",
+      "priority": "urgent",
+      "assigneeId": "u_faizan",
+      "projectId": "p_data_upload",
+      "dueDate": "2026-11-19",
+      "checklist": [
+        {
+          "id": "c5",
+          "title": "Upload CSV import file",
+          "done": true
+        }
+      ],
+      "comments": [],
+      "activity": []
+    },
+    {
+      "id": "t_data_sheets_verify",
+      "title": "Verify data sheets and lead records",
+      "description": "Review incoming customer inquiries and update CRM tracker.",
+      "status": "todo",
+      "priority": "normal",
+      "assigneeId": "u_qanit",
+      "projectId": "p_data_upload",
+      "dueDate": "2026-11-19",
+      "checklist": [],
+      "comments": [],
+      "activity": []
+    },
+    {
+      "id": "t_erp_api",
+      "title": "ERP portal inventory sync API endpoint",
+      "description": "Implement real-time sync endpoint with authentication and caching.",
+      "status": "in_progress",
+      "priority": "high",
+      "assigneeId": "u_talha",
+      "projectId": "p_erp_web",
+      "dueDate": "2026-11-19",
+      "checklist": [
+        {
+          "id": "c6",
+          "title": "Write tests and update routes",
+          "done": false
+        }
+      ],
+      "comments": [],
+      "activity": []
+    },
+    {
+      "id": "t_db_indexing",
+      "title": "Core database indexing & backup automation",
+      "description": "Optimize slow queries on inventory tables and schedule hourly backups.",
+      "status": "todo",
+      "priority": "normal",
+      "assigneeId": "u_devs",
+      "projectId": "p_erp_web",
+      "dueDate": "2026-11-20",
+      "checklist": [],
+      "comments": [],
+      "activity": []
+    },
+    {
+      "id": "t_hr_attendance",
+      "title": "HR attendance report and vendor invoices review",
+      "description": "Review monthly attendance logs and approve pending maintenance invoices.",
+      "status": "todo",
+      "priority": "normal",
+      "assigneeId": "u_haider",
+      "projectId": "p_hr_admin",
+      "dueDate": "2026-11-19",
+      "checklist": [],
+      "comments": [],
+      "activity": []
+    },
+    {
+      "id": "t_showroom_expansion",
+      "title": "New showroom location feasibility check",
+      "description": "Coordinate with property managers and estimate setup timelines.",
+      "status": "todo",
+      "priority": "low",
+      "assigneeId": "u_super_admin",
+      "projectId": "p_projects",
+      "dueDate": "2026-11-20",
+      "checklist": [],
+      "comments": [],
+      "activity": []
+    }
+  ],
+  "users": [
+    {
+      "id": "u_super_admin",
+      "name": "Khushi Admin",
+      "email": "admin@khushimotors.com",
+      "role": "Super Admin",
+      "status": "active",
+      "initials": "KA",
+      "color": "#6d28d9",
+      "department": "Executive",
+      "title": "Owner & Super Admin"
+    },
+    {
+      "id": "u_talha",
+      "name": "Talha Ahmad",
+      "email": "talha@khushimotors.com",
+      "role": "Admin",
+      "status": "active",
+      "initials": "TA",
+      "color": "#06b6d4",
+      "department": "ERP/Web",
+      "title": "Full Stack Engineer"
+    },
+    {
+      "id": "u_faizan",
+      "name": "Faizan Arif",
+      "email": "faizan@khushimotors.com",
+      "role": "Member",
+      "status": "active",
+      "initials": "FA",
+      "color": "#eab308",
+      "department": "Data-Upload",
+      "title": "Operations & Media"
+    },
+    {
+      "id": "u_zunaira",
+      "name": "Zunaira Jameel",
+      "email": "zunaira@khushimotors.com",
+      "role": "Manager",
+      "status": "active",
+      "initials": "ZJ",
+      "color": "#dc2626",
+      "department": "Creative",
+      "title": "Content & Design Lead"
+    },
+    {
+      "id": "u_saira",
+      "name": "Saira Bushi Khushi Media",
+      "email": "saira@khushimotors.com",
+      "role": "Member",
+      "status": "active",
+      "initials": "SB",
+      "color": "#ea580c",
+      "department": "Performance",
+      "title": "Performance Marketing"
+    },
+    {
+      "id": "u_abdul",
+      "name": "Abdul Rehman",
+      "email": "abdul.rehman@khushimotors.com",
+      "role": "Member",
+      "status": "active",
+      "initials": "AR",
+      "color": "#0284c7",
+      "department": "Performance",
+      "title": "Performance Specialist"
+    },
+    {
+      "id": "u_hamza",
+      "name": "Hamza Aabir (Deactivated)",
+      "email": "hamza@khushimotors.com",
+      "role": "Guest",
+      "status": "active",
+      "initials": "HA",
+      "color": "#78350f",
+      "department": "Creative",
+      "title": "Media Specialist"
+    },
+    {
+      "id": "u_umair",
+      "name": "Umair Iqbal",
+      "email": "umair@khushimotors.com",
+      "role": "Manager",
+      "status": "active",
+      "initials": "UI",
+      "color": "#9333ea",
+      "department": "Creative",
+      "title": "Creative & Video Lead"
+    },
+    {
+      "id": "u_haider",
+      "name": "Haider",
+      "email": "haider@khushimotors.com",
+      "role": "Member",
+      "status": "active",
+      "initials": "HD",
+      "color": "#10b981",
+      "department": "HR/Admin",
+      "title": "HR & Admin Officer"
+    },
+    {
+      "id": "u_qanit",
+      "name": "Qanit",
+      "email": "qanit@khushimotors.com",
+      "role": "Member",
+      "status": "active",
+      "initials": "QN",
+      "color": "#4f46e5",
+      "department": "Data-Upload",
+      "title": "Data Analyst"
+    },
+    {
+      "id": "u_eliya",
+      "name": "Eliya (Deactivated)",
+      "email": "eliya@khushimotors.com",
+      "role": "Guest",
+      "status": "active",
+      "initials": "EL",
+      "color": "#ec4899",
+      "department": "Projects",
+      "title": "Project Coordinator"
+    },
+    {
+      "id": "u_devs",
+      "name": "Developers Khushi Media",
+      "email": "devs@khushimotors.com",
+      "role": "Member",
+      "status": "active",
+      "initials": "DM",
+      "color": "#7c3aed",
+      "department": "ERP/Web",
+      "title": "Core Engineering Team"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p_performance",
+      "name": "Performance & Ads",
+      "spaceId": "s_performance",
+      "color": "#f59e0b",
+      "description": "Daily ad spend, reporting and performance campaigns"
+    },
+    {
+      "id": "p_creative",
+      "name": "Creative Production",
+      "spaceId": "s_creative",
+      "color": "#e11d48",
+      "description": "Video, audio and visual assets"
+    },
+    {
+      "id": "p_erp_web",
+      "name": "ERP & Web Development",
+      "spaceId": "s_erp_web",
+      "color": "#0891b2",
+      "description": "Core web portal and inventory system"
+    },
+    {
+      "id": "p_data_upload",
+      "name": "Data Upload & Records",
+      "spaceId": "s_data_upload",
+      "color": "#ca8a04",
+      "description": "Vehicle data, sheets and catalog records"
+    },
+    {
+      "id": "p_hr_admin",
+      "name": "HR & Admin Operations",
+      "spaceId": "s_hr_admin",
+      "color": "#059669",
+      "description": "Team attendance, approvals and office logistics"
+    },
+    {
+      "id": "p_projects",
+      "name": "Showroom & Expansion",
+      "spaceId": "s_projects",
+      "color": "#7c3aed",
+      "description": "New showroom setups and offline campaigns"
+    }
+  ],
+  "spaces": [
+    {
+      "id": "s_performance",
+      "name": "Performance",
+      "color": "bg-amber-600"
+    },
+    {
+      "id": "s_creative",
+      "name": "Creative",
+      "color": "bg-rose-600"
+    },
+    {
+      "id": "s_erp_web",
+      "name": "ERP/Web",
+      "color": "bg-cyan-600"
+    },
+    {
+      "id": "s_data_upload",
+      "name": "Data-Upload",
+      "color": "bg-yellow-600"
+    },
+    {
+      "id": "s_hr_admin",
+      "name": "HR/Admin",
+      "color": "bg-emerald-600"
+    },
+    {
+      "id": "s_projects",
+      "name": "Projects",
+      "color": "bg-violet-600"
+    }
+  ],
+  "feed": [
+    {
+      "id": "f_48ggaoz",
+      "userId": "u_faizan",
+      "text": "created “sdfsdf”",
+      "createdAt": "2026-11-19T10:11:11.652Z",
+      "href": "/tasks/t_v672k2r"
+    },
+    {
+      "id": "f_g47hz4g",
+      "userId": "u_faizan",
+      "text": "created “theyway”",
+      "createdAt": "2026-11-19T10:10:50.508Z",
+      "href": "/tasks/t_gjzpn9i"
+    },
+    {
+      "id": "f_xazezcy",
+      "userId": "u_super_admin",
+      "text": "switched active user to Faizan Arif",
+      "createdAt": "2026-11-19T08:26:04.828Z"
+    },
+    {
+      "id": "f_h2jnneq",
+      "userId": "u_abdul",
+      "text": "completed “Prepare the Obeya meeting Report Today”",
+      "createdAt": "2026-11-19T08:20:56.068Z",
+      "href": "/tasks/t_obeya"
+    },
+    {
+      "id": "f_ot493ow",
+      "userId": "u_abdul",
+      "text": "deleted task “Morning ads check”",
+      "createdAt": "2026-11-19T08:20:17.849Z"
+    },
+    {
+      "id": "f_21128ic",
+      "userId": "u_super_admin",
+      "text": "switched active user to Abdul Rehman",
+      "createdAt": "2026-11-19T08:11:38.791Z"
+    },
+    {
+      "id": "f_vwantfs",
+      "userId": "u_saira",
+      "text": "signed in as Khushi Admin",
+      "createdAt": "2026-11-19T08:07:58.153Z"
+    },
+    {
+      "id": "f_u717mkk",
+      "userId": "u_super_admin",
+      "text": "signed in as Saira Bushi Khushi Media",
+      "createdAt": "2026-11-19T08:07:37.198Z"
+    },
+    {
+      "id": "f_4euq3j4",
+      "userId": "u_super_admin",
+      "text": "signed in as Khushi Admin",
+      "createdAt": "2026-11-19T07:50:05.993Z"
+    },
+    {
+      "id": "f_t3pwo26",
+      "userId": "u_super_admin",
+      "text": "signed in as Khushi Admin",
+      "createdAt": "2026-11-19T07:44:50.740Z"
+    },
+    {
+      "id": "f1",
+      "userId": "u_abdul",
+      "text": "updated Obeya report checklist",
+      "createdAt": "2026-11-19T06:57:37.287Z"
+    },
+    {
+      "id": "f2",
+      "userId": "u_talha",
+      "text": "pushed ERP API update to staging",
+      "createdAt": "2026-11-19T06:57:37.287Z"
+    },
+    {
+      "id": "f3",
+      "userId": "u_faizan",
+      "text": "uploaded latest vehicle inventory batch",
+      "createdAt": "2026-11-19T06:57:37.287Z"
+    }
+  ],
+  "lastModified": 1795083248182,
+  "updatedBy": "Employee"
+}
